@@ -1,0 +1,16 @@
+name: SellChest
+author: Mas281
+version: ${project.version}
+
+softdepend: [ShopGUIPlus]
+depend: [Vault, WorldGuard]
+
+main: com.thesquadmc.sellchest.SellChest
+
+commands:
+  sellwand:
+    description: "Give a player a sell wand"
+    aliases: []
+  sell:
+    description: "Sell items"
+    aliases: [sellitems]

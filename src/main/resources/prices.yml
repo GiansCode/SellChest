@@ -1,0 +1,4 @@
+# The price each item can be sold for
+worth:
+  dirt:
+    0: 1

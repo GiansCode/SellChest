@@ -1,0 +1,50 @@
+# Whether to use the Essentials plugin worth.yml file for prices
+use_essentials_worth: false
+
+use_shopgui_worth: true
+
+sign:
+  # The content of a sign to count as a sell-sign
+  pattern:
+    - "[Sell]"
+  # The text to replace the original with on sell-signs
+  replace:
+    - "&6[Sell]"
+    - "Click to"
+    - "sell items"
+
+# Permissions
+# sellchest.command.sell
+# sellchest.command.give
+
+inventory:
+  name: "&4Sell Items"
+  size: 54
+
+sell_wand:
+  type: "WOOD_HOE"
+  data: 0
+  name: "&e&lSell Wand"
+  lore:
+  - "&fRight click on items to sell"
+  - "&fUses: %available%/%max%"
+  glowing: true
+
+messages:
+  no_permission: "&cYou don't have permission to use this command"
+  no_console: "&cOnly players can use this command"
+
+  give_command_usage: "&cUsage: /sellwand give <player> <amount>"
+  give_command_not_online: "&cThat player is not online"
+  give_command_invalid_number: "&cThat is not a valid integer"
+  give_command_too_small: "&cUsage must be at least 1"
+  give_command_given: "&aYou gave %player% a wand with %uses% uses"
+  give_command_received: "&aYou received a wand from %player% with %uses% uses"
+
+  sell_wand_broke: "&cYour sell wand broke!"
+
+  money_earned: "&aYou earned $%amount% from selling the items"
+  created_sign: "&aYou created a sell sign!"
+  sign_error: "&cError: Sign must be attached to a chest"
+  sell_error: "&cThe chest contained items which could not be sold"
+  no_sell_permission: "&cError: You cannot use sell signs here"
